@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" font-family="Inter, Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="seta" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f15a29"/>
+    </marker>
+  </defs>
+
+  <!-- sparta-prd -->
+  <rect x="20" y="50" width="280" height="290" rx="16" fill="none" stroke="#00E6CC" stroke-width="2"/>
+  <text x="160" y="80" text-anchor="middle" fill="#00E6CC" font-size="20" font-weight="700">sparta-prd</text>
+  <text x="160" y="102" text-anchor="middle" fill="#8B9DC3" font-size="14">produção</text>
+  <rect x="60" y="130" width="200" height="60" rx="10" fill="#122033" stroke="#4ECDC4"/>
+  <text x="160" y="158" text-anchor="middle" fill="#F8FAFC" font-size="15">demo-app</text>
+  <text x="160" y="177" text-anchor="middle" fill="#8B9DC3" font-size="12">nginx-demo + ConfigMap</text>
+  <rect x="60" y="220" width="200" height="60" rx="10" fill="#122033" stroke="#4ECDC4"/>
+  <text x="160" y="248" text-anchor="middle" fill="#F8FAFC" font-size="15">Velero</text>
+  <text x="160" y="267" text-anchor="middle" fill="#8B9DC3" font-size="12">BSL default → sparta-prd-backups</text>
+
+  <!-- RustFS -->
+  <rect x="360" y="50" width="280" height="290" rx="16" fill="none" stroke="#4ECDC4" stroke-width="2"/>
+  <text x="500" y="80" text-anchor="middle" fill="#4ECDC4" font-size="20" font-weight="700">RustFS</text>
+  <text x="500" y="102" text-anchor="middle" fill="#8B9DC3" font-size="14">4 nós · erasure coding</text>
+  <rect x="400" y="120" width="200" height="40" rx="10" fill="#122033" stroke="#8B9DC3"/>
+  <text x="500" y="145" text-anchor="middle" fill="#F8FAFC" font-size="14">HAProxy · rustfs-lb</text>
+  <rect x="392" y="180" width="52" height="44" rx="8" fill="#122033" stroke="#00C4A7"/>
+  <text x="418" y="207" text-anchor="middle" fill="#F8FAFC" font-size="13">node0</text>
+  <rect x="452" y="180" width="52" height="44" rx="8" fill="#122033" stroke="#00C4A7"/>
+  <text x="478" y="207" text-anchor="middle" fill="#F8FAFC" font-size="13">node1</text>
+  <rect x="512" y="180" width="52" height="44" rx="8" fill="#122033" stroke="#00C4A7"/>
+  <text x="538" y="207" text-anchor="middle" fill="#F8FAFC" font-size="13">node2</text>
+  <rect x="572" y="180" width="52" height="44" rx="8" fill="#122033" stroke="#00C4A7"/>
+  <text x="598" y="207" text-anchor="middle" fill="#F8FAFC" font-size="13">node3</text>
+  <rect x="400" y="250" width="200" height="60" rx="10" fill="#122033" stroke="#4ECDC4"/>
+  <text x="500" y="276" text-anchor="middle" fill="#F8FAFC" font-size="13">sparta-prd-backups</text>
+  <text x="500" y="296" text-anchor="middle" fill="#F8FAFC" font-size="13">sparta-dr-backups</text>
+
+  <!-- sparta-dr -->
+  <rect x="700" y="50" width="280" height="290" rx="16" fill="none" stroke="#00E6CC" stroke-width="2"/>
+  <text x="840" y="80" text-anchor="middle" fill="#00E6CC" font-size="20" font-weight="700">sparta-dr</text>
+  <text x="840" y="102" text-anchor="middle" fill="#8B9DC3" font-size="14">recuperação</text>
+  <rect x="740" y="130" width="200" height="60" rx="10" fill="#122033" stroke="#4ECDC4"/>
+  <text x="840" y="158" text-anchor="middle" fill="#F8FAFC" font-size="15">Velero</text>
+  <text x="840" y="177" text-anchor="middle" fill="#8B9DC3" font-size="12">BSL from-prd (somente leitura)</text>
+  <rect x="740" y="220" width="200" height="60" rx="10" fill="#122033" stroke="#4ECDC4" stroke-dasharray="5 4"/>
+  <text x="840" y="248" text-anchor="middle" fill="#F8FAFC" font-size="15">demo-app restaurada</text>
+  <text x="840" y="267" text-anchor="middle" fill="#8B9DC3" font-size="12">Deployment + ConfigMap</text>
+
+  <!-- fluxos -->
+  <line x1="300" y1="200" x2="355" y2="200" stroke="#f15a29" stroke-width="3" marker-end="url(#seta)"/>
+  <text x="328" y="188" text-anchor="middle" fill="#f15a29" font-size="13" font-weight="700">backup</text>
+  <line x1="645" y1="200" x2="695" y2="200" stroke="#f15a29" stroke-width="3" marker-end="url(#seta)"/>
+  <text x="670" y="188" text-anchor="middle" fill="#f15a29" font-size="13" font-weight="700">restore</text>
+</svg>
