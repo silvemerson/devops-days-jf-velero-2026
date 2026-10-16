@@ -6,6 +6,7 @@ class:
   - invert
 paginate: true
 backgroundColor: #0B1426
+footer: '![height:40px](4linux-logo/logo-4linux.png)'
 lang: pt-BR
 style: |
   /* @theme 4linux */
@@ -462,9 +463,7 @@ Prints do lab, na ordem do fluxo: storage, instalação, backup e restore.
 
 ---
 
-## Backup no RustFS
-
-![h:400](images/lab/14.png)
+![h:620](images/lab/14.png)
 
 ---
 
@@ -513,6 +512,20 @@ Prints do lab, na ordem do fluxo: storage, instalação, backup e restore.
   <p>Backup que nunca foi restaurado <strong>não é backup</strong></p>
 </div>
 
+---
+<!-- _paginate: false -->
+
+## Curso gratuito
+
+![bg right:45% 70%](images/qrcode-curso.png)
+
+### DevOps, AIOps e SRE Fundamentals
+
+Curso gratuito da 4Linux
+
+Escaneie o QR code pra se inscrever
+
+* 🎓 4linux.com.br/cursos
 
 ---
 <!-- _paginate: false -->
@@ -525,7 +538,7 @@ Prints do lab, na ordem do fluxo: storage, instalação, backup e restore.
 ### Contato
 
 * 💻 github.com/silvemerson/infra-velero-rustfs
-* 📖 docs / referências da palestra
+* 📖 velero.io
 * 📝 emerson-silva.blog.br
 * 💬 @silvemerson
 

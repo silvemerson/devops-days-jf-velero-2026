@@ -16,7 +16,6 @@ Lab usado para os prints da parte prática: [`silvemerson/infra-velero-rustfs`](
 ```
 slides.md          # conteúdo dos slides (Marp)
 slides.html        # HTML de conferência gerado a partir do slides.md
-docs/              # roteiro de texto da palestra
 images/lab/        # prints do lab usados na parte prática
 images/            # QR code e logos de comunidade
 logos/             # logo do evento
