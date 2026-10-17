@@ -25,6 +25,11 @@ style: |
     --4linux-dark: #0B1426;
   }
 
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
   section {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background-color: var(--4linux-dark);
@@ -359,9 +364,11 @@ Fundada em 2001, a 4Linux participou das principais transformações da área de
 
 <style scoped>
 section { justify-content: flex-start !important; padding-top: 10px !important; }
+.logo-wrap { text-align: center; margin-top: -70px; }
+.logo-badge { background: #FFFFFF; border-radius: 16px; padding: 18px 26px; display: inline-block; }
 </style>
 
-<div style="text-align:center; margin-top:-70px;"><div style="background:#FFFFFF; border-radius:16px; padding:18px 26px; display:inline-block;"><img src="images/velero-logo.svg" height="110"></div></div>
+<div class="logo-wrap"><div class="logo-badge"><img src="images/velero-logo.svg" height="110"></div></div>
 
 * Ferramenta open source, originalmente da VMware
 * Roda como controlador dentro do cluster
@@ -381,9 +388,10 @@ section { justify-content: flex-start !important; padding-top: 10px !important; 
 
 <style scoped>
 section { justify-content: flex-start !important; padding-top: 10px !important; }
+.logo-badge { background: #FFFFFF; border-radius: 16px; padding: 18px 26px; display: inline-block; }
 </style>
 
-<div style="text-align:center;"><div style="background:#FFFFFF; border-radius:16px; padding:18px 26px; display:inline-block;"><img src="logos/rustfs.png" height="90"></div></div>
+<div style="text-align:center;"><div class="logo-badge"><img src="logos/rustfs.png" height="90"></div></div>
 
 * Object storage **compatível com S3**
 * Escrito em **Rust**
